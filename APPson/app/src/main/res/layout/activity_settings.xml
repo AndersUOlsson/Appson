@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="se.appson.www.appson.SettingsActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="245dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif"
+        android:layerType="software"
+        android:text="Ny Profil"
+        android:textSize="30sp"
+        android:typeface="monospace"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="26dp"
+        app:layout_constraintBottom_toBottomOf="@+id/back_button"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintTop_toTopOf="@+id/back_button"
+        app:layout_constraintLeft_toRightOf="@+id/back_button" />
+
+    <Button
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:onClick="backToHomePage"
+        android:layout_marginStart="26dp"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="10dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <TextView
+                android:id="@+id/kategori"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="KATEGORI"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/kategoriSpinner"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:contextClickable="false"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewNamn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Namn" />
+
+            <EditText
+                android:id="@+id/profileName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewEpost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="E-post" />
+
+            <EditText
+                android:id="@+id/Epost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Telefon" />
+
+            <EditText
+                android:id="@+id/Phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/textViewPlace"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Plats"
+                android:textSize="30sp" />
+
+            <Spinner
+                android:id="@+id/spinnerPlace"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:contextClickable="false"
+                android:text="Välj plats"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewPicture"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Bilder"
+                android:textSize="30sp" />
+
+            <ImageView
+                android:id="@+id/profileImage1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:drawable/ic_menu_camera"
+                android:onClick="imageSelect" />
+
+            <EditText
+                android:id="@+id/DescriptionEditText"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:ems="10"
+                android:inputType="textMultiLine"
+                android:hint="Sammanfattning" />
+
+            <Button
+                android:id="@+id/saveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="saveProfile"
+                android:text="Spara" />
+
+            <LinearLayout
+                android:layout_width="144dp"
+                android:layout_height="106dp"
+                android:orientation="horizontal">
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="CheckBox" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

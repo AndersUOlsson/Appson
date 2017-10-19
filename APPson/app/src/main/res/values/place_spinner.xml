@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="place_array">
+        <item>Norrbotten</item>
+        <item>Västerbotten</item>
+        <item>Jämtland</item>
+        <item>Västernorrland</item>
+        <item>Gävleborg</item>
+        <item>Dalarna</item>
+        <item>Värmland</item>
+        <item>Örebro</item>
+        <item>Västermanland</item>
+        <item>Uppsala</item>
+        <item>Stockholm</item>
+        <item>Södermanland</item>
+        <item>Skaraborg</item>
+        <item>Ötergötland</item>
+        <item>Göteborg</item>
+        <item>Älvsborg</item>
+        <item>Jönköping</item>
+        <item>Kalmar</item>
+        <item>Gotland</item>
+        <item>Halland</item>
+        <item>Kronoberg</item>
+        <item>Blekinge</item>
+        <item>Skåne</item>
+    </string-array>
+</resources>
